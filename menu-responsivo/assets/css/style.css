@@ -59,3 +59,55 @@ li a {
     color: white;
     font-weight: bold;
 }
+
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-list a {
+        display: none;
+    }
+    .botão {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu ul li a {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .botão {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .botão a {
+        font-size: 20px;
+    }
+    .mobile-menu .botão button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}

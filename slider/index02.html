@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider - 02</title>
+    <link rel="stylesheet" href="assets/css/style02.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--Slide images-->
+            <div class="slide first">
+                <img src="assets/img/banner-1.png" alt="banner 1">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner-2.png" alt="banner 2">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner-3.png" alt="banner 3">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner-4.png" alt="banner 4">
+            </div>
+
+            <!--Navigation auto-->
+            <div class="navigationAuto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <div class="manualNavigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    
+    <script src="assets/js/script02.js"></script>
+</body>
+</html>

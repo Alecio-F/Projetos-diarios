@@ -1,42 +1,46 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+    box-sizing:border-box;
     text-decoration: none;
+    list-style: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: white
+    color: white;
 }
 
 header {
-    background-color: #101027;
+    width: 600px;
+    margin: auto;
+    background-color: aquamarine;
 }
 
-.navbarra {
+.cabeçalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 70px;
-    padding: 0 34px;
+    padding: 20px;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 22px;
     font-weight: bold;
 }
-
 .menu {
     display: flex;
     align-items: center;
     gap: 60px;
 }
-.menu-link {
-    transition: .3s ease;
+.menu a {
+    font-weight: bold;
 }
-.menu-link:hover {
-    color: #0088d4;
+.menu a:hover {
+    background-color: white;
+    border-radius: 4px;
+    color: #22c1c3;
+    padding: 8px;
 }
-.hamburger {
+
+.hamburguer {
     display: none;
     cursor: pointer;
 }
@@ -51,35 +55,39 @@ header {
 }
 
 @media (max-width: 768px) {
-    .hamburger {
+    .hamburguer {
         display: block;
     }
-    .hamburger.ativo .barra:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.ativo .barra:nth-child(1){
+    .hamburguer.ativo .barra:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.ativo .barra:nth-child(3){
+    .hamburguer.ativo .barra:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburguer.ativo .barra:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+        
     }
 
     .menu {
         position: fixed;
-        left: -100%;
-        top: 70px;
+        top: -100%;
+        left: 0px;
         gap: 0;
         border-radius: 0 0 20px 20px;
-        background-color: #101027;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 3%, rgba(34,193,195,1) 75%);;
         text-align: center;
         flex-direction: column;
         width: 100%;
+        height: 300px;
+        margin-top: 69px;
         transition: .3s;
+        padding: 20px;
     }
-    .menu-item {
-        margin: 16px 0;
+    .menu li {
+        padding: 10px 0 10px 0;
     }
     .menu.ativo {
-        left: 0;
+        top: 0;
     }
 }

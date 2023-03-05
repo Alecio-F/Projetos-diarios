@@ -9,9 +9,9 @@
 }
 
 header {
-    width: 600px;
+    max-width: 768px;
     margin: auto;
-    background-color: aquamarine;
+    background-color: #059c6a;
 }
 
 .cabeçalho {
@@ -30,14 +30,21 @@ header {
     align-items: center;
     gap: 60px;
 }
+.menu ul {
+    display: flex;
+}
+.menu li:not(:last-child) {
+    padding-right: 20px;
+
+}
 .menu a {
     font-weight: bold;
+    padding: 8px;
 }
 .menu a:hover {
     background-color: white;
     border-radius: 4px;
-    color: #22c1c3;
-    padding: 8px;
+    color: #059c6a;
 }
 
 .hamburguer {
@@ -84,8 +91,20 @@ header {
         transition: .3s;
         padding: 20px;
     }
-    .menu li {
-        padding: 10px 0 10px 0;
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu a:hover {
+        background-color: white;
+        border-radius: 4px;
+        color: #22c1c3;
+        padding: 8px;
+    }
+    .menu li:not(:last-child) {
+        padding: 10px 0;
+    }
+    .menu li:last-child {
+        padding-top: 10px;
     }
     .menu.ativo {
         top: 0;
